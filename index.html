@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang=en>
+  <head>
+    <meta charset=uft-8>
+    <title> First Rainbow</title>
+    <link href="./main.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <img class="unicorn" src="https://www.whatsonnetwork.co.uk/uploads/800x600/3a83c90572acf32bb47d53927924bd74.jpg">
+    <h1>Choose Rainbow</h1>
+    <div class="inputSection">
+     <div class="inputs">
+      <input placeholder="Color"></input>
+     </div>
+    <button class="butAdd">Add</button>
+    </div>
+    <div class="result-section"></div>
+    <button class="butMagic">Create Magic</button>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script>
+    $(function()  {
+      $('.result-section').hide()
+
+      var add_option = function() {
+        $('.inputs').append('<input></input>')
+      }
+
+        $('.butAdd').click(add_option)
+    })
+  </script>
+  </body>
+
+</html>
